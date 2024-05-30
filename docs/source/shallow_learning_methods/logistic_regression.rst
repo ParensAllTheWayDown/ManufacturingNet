@@ -103,7 +103,7 @@ Example Usage
     dataset = dataset.to_numpy()
     attributes = dataset[:, 0:5]                    # Columns 1-5 contain our features
     labels = dataset[:, 5]                          # Column 6 contains our class labels
-    log_model = LinRegression(attributes, labels)
+    log_model = LogRegression(attributes, labels)
     log_model.run()                                 # This will trigger the command-line interface for parameter input
 
     new_data_X = read_csv('/path/to/new_data_X.csv')
